@@ -1,6 +1,7 @@
 public class Stock {
   //Creates integers 
   Cafe cf = new Cafe(); 
+  Shipment Sm = new Shipment(); 
   private int stkBuiscut;
   private int stkCookie;
   private int stkBrownie;
@@ -15,6 +16,20 @@ public class Stock {
   stkCoffee = 1000;
   CafeOrderNum = cf.getOrderNum();
   CafeDay = cf.getDays();
+  }
+  public void GetOrder( double I , double B , double C , double F , int D, int A) { 
+    I = cf.getBiscutA();
+    B = cf.getBrownieA();
+    C = cf.getCookieA();
+    F = cf.getCoffeeA();
+    A = 2000;
+    Sm.ShipmentOrder( I , B , C , F , D, A);
+    if ( cf.getDays() == Sm.getShipmentDate()) { 
+      stkBuiscut += Sm.getSmBuiscut();
+      stkBrownie += Sm.getSmBrownie();
+      stkCookie += Sm.getSmCookie();
+      stkCoffee +=  Sm.getSmCoffee();
+    }
   }
   public int Getstock(int O){
     if (cf.getOrderNum() > CafeOrderNum){
@@ -35,6 +50,7 @@ public class Stock {
       return 0;
     }
   }
+  
  
   
 
