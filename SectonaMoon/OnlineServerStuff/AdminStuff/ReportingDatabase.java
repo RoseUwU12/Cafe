@@ -6,7 +6,6 @@ public class ReportingDatabase {
     private int statsReportSubNum; 
     private String statsReason; 
 
-    public ReportingDatabase() { 
-        
-    }
+    public ReportingDatabase() {
+}
 }
