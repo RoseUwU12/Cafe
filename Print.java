@@ -4,7 +4,7 @@ public class Print {
 
   public Print(){
     PrintINT = 0;
-    PrintUntil = 20;
+    PrintUntil = 28;
   }
   public int GetPrintInt(){
     return PrintINT;

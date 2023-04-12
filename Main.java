@@ -1,11 +1,19 @@
+import PracticeProblems.StoreVar;
+/******************************************************
+ * SIMPLE CLASS CALLING / METHOD PRACTICE. IN JAVA;   *
+ ******************************************************/
 class Main{
   public static void main(final String[] args) {
-  final StepTracker tr = new StepTracker(10000);
-      SexyMan Sm = new SexyMan();
+  final Steptracker tr = new Steptracker(10000);
   final Cafe cf = new Cafe();
   Stock STK = new Stock();
   Print Pr = new Print();
-    
+  employee Em = new employee(); 
+  Shipment Sm = new Shipment();
+  StoreVar Sv = new StoreVar();
+
+    Sm.Test( 36 ,34 , 0);
+  System.out.println(Sm.getTestStatement());
   System.out.println(tr.activeDays());
   System.out.println(tr.averageSteps());
   tr.addDailySteps(9000); 
@@ -20,10 +28,12 @@ class Main{
   System.out.println(tr.activeDays()); 
   System.out.println(tr.averageSteps());   
     System.out.println("uwu");
-    
+    cf.Order(3, 6 ,5 ,4 );
+    Sv.StoreDoubleVar(cf.getMoneyT());
+    System.out.println(Sv.GetSD());
     
   for ( int P = Pr.GetPrintInt() ; P<= Pr.GetPrintUntil() ; P++){
-    cf.Order(1 , 2 , 3 , 4);
+    cf.Order(1 , 2  , 3 , 4);
     System.out.println("                           ");
     System.out.println("----------"); 
      System.out.println("         Order #" + cf.getOrderNum());
@@ -48,7 +58,8 @@ class Main{
 else {
 System.out.println("No");
 }
-     System.out.println("                           ");
+    if (cf.getOrderNum() % 4 == 0){
+  System.out.println("                           ");
     System.out.println("-----------------------------");
     System.out.println("        Daily Stats         ");
     System.out.println("          Day #" + cf.getDays());
@@ -60,8 +71,9 @@ System.out.println("No");
     System.out.println("Total Customers     " + cf.getCustomers());
     System.out.println("Customer Satisfaction %  " + Math.round(cf.getSatCus() / cf.getCustomers() * 100) + "%");
     System.out.println("                     ");
-
-  System.out.println("           Total Stats");
+    }
+  if ((cf.getDays() % 7 == 0 && cf.getWeeks() == 1) || (cf.getDays() == 7 && cf.getOrderNum() % 4 == 0 )  ){
+    System.out.println("           Total Stats");
 System.out.println( "        week #" + cf.getWeeks() +"  " + "day #" + cf.getDays());
 System.out.println( "Total Money Made" + "   " + cf.GetArchMoney() + "$");
 System.out.println( "Total Customers" + "   " +  cf.getArchCustomers());
@@ -75,8 +87,8 @@ System.out.println( "Total Sales" + "   " + cf.getArchTotOrders());
     else {
       System.out.println(" You didn't reach any goals this week ;(");
     }
-    System.out.println(cf.Colin());
-    System.out.println(Sm.getA());
+  }
+
   }
   }
 }

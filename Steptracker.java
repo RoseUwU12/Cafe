@@ -1,11 +1,10 @@
-public class StepTracker {
+public class Steptracker {
   private int activeDays;
   private int totalDays;
   private int totalSteps;
   private int goal;
-  private StepTracker tr;
-
-  public StepTracker(int g){
+  
+  public Steptracker(int g){
     goal = g; 
     totalSteps = 0;
     totalDays = 0;
