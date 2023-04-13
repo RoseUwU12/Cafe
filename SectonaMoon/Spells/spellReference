@@ -1,0 +1,15 @@
+Id # | spell Name | spell Type # | spell Category # | category , ID , type
+0    | Splash     | single (1)   | Water (0)        |  0 , 0 , 1
+1    | WaterSlash | single (1)   | Water (0)        |  0 , 1 , 1
+2    | Torrent    | AOE (0)      | Water (0)        |  0 , 2 , 0
+3    | SummonEel  | Status (2)   | Water (0)        |  0 , 3 , 2 
+4    | SummonPuff-| status (2)   | Water (0)        |  0 , 4 , 2 
+5    | Whirlpool  | AOE (0)      | Water (0)        |  0 , 5 , 0 
+6    | Leviatian  | AOE (0)      | Water (0)        |  0 , 6 , 0 
+7    | FireBall   | Single (1)   | Fire (1)         |  1 , 7 , 1
+8    | FlameCircle| AOE (0)      | Fire (1)         |  1 , 8 , 0
+9    | Blaze      | Single (1)   | Fire (1)         |  1 , 9 , 1 
+10   | FlameSlash | Single (1)   | Fire (1)         |  1 , 10 , 1 
+11   | FlameBlare | Status (2)   | Fire (1)         |  1 , 11 , 2 
+12   | SummonPhen | AOE (0)      | Fire (1)         |  1 , 12 , 0
+13   | HellFire   | AOE (0)      | Fire (1)         |  1 , 13 , 0 

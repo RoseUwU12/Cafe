@@ -1,40 +1,42 @@
+import PracticeProblems.IfStatement;
 
 public class Cafe {
   // Employee class is "imported" here as em.Methodname()
-  Employee Em = new Employee();
+  employee Em = new employee();
+  IfStatement IF = new IfStatement();
   //Variables are set as private so we can use a constructor 
   private double TotalMoneyNT;
-  private int totalSales;
-  private int TotalCustomers;
-  private int FoodItemSold;
   private double coffee;
   private double biscut;
   private double brownie;
   private double cookie;
-  private int ordernumber;
   private double orderTotal;
-  private int days;
-  private boolean Satisfaction;
+  private double SatCusPer;
+  private double archMoney;
+  private double tax;
+  private double MoneyT;
   private int time;
   private int sec;
   private int min;
   private int hours;
-  private int day;
   private int totalOrders;
   private int SatCus;
-  private double SatCusPer;
-  private int dayCounter;
-  private double archMoney;
+  private int totalSales;
+  private int TotalCustomers;
   private int archSales; 
   private int archCustomers;
   private int weeks; 
   private int archTotOrders;
-  private double tax;
-  private double MoneyT;
-  private boolean colinIsGay;
+  private int dayCounter;
+  private int FoodItemSold;
+  private int days;
+  private int ordernumber; 
+  private boolean Satisfaction;
   
   public Cafe (){
-    //this is the constructor it will set the variables when we call it in another class
+/**************************************************************************************
+ * THIS IS THE CONSTRUCTOR IT WILL SET THE VARIABLES WHEN WE CALL IT IN ANOTHER CLASS *
+ **************************************************************************************/
     TotalMoneyNT = 0;
     totalSales = 0;
     TotalCustomers = 0;
@@ -49,7 +51,6 @@ public class Cafe {
     dayCounter = days;
     weeks = 0;
     tax = 0.07;
-    colinIsGay = true;
     sec = 0;
     min = 0;
     hours = 0;
@@ -65,7 +66,8 @@ public class Cafe {
   }
 public void Order( final double a , final double b , final double c , final double d){
   //method to be called in other classes and will use a, b , c , and d as variables
-    if (days == dayCounter ){ //if the day variable is equal to the day counter then the code will run 
+  IF.IsEqual(days, dayCounter);
+    if (IF.GetStoredStatement() == true ){ //if the day variable is equal to the day counter then the code will run 
       FoodItemSold = 0;
       FoodItemSold += a + b + c + d;
       TotalCustomers ++ ;
@@ -136,7 +138,7 @@ public void Order( final double a , final double b , final double c , final doub
     if (Satisfaction == true) {
       SatCus++;
     }
-     time = TimeFormula();
+     time = TimeFormula(); // uses the time Fromuls method 
       totalSales += FoodItemSold;
       totalOrders ++;
      if ( ordernumber % 4 == 0){
@@ -261,9 +263,6 @@ public void Order( final double a , final double b , final double c , final doub
   }
   public double getMoneyT(){
     return MoneyT;
-  }
-  public boolean Colin(){
-    return colinIsGay;
   }
   public int Seconds(){
     return sec;

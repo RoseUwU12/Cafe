@@ -1,11 +1,10 @@
- public class Employee {
+ public class employee {
   private double Paycheck;
-  private double Totalpay;
-  private double CafeMoney;
+
   private int TotEmployee;
 
 
-public Employee(){
+public employee(){
   Paycheck = 10.0;
   TotEmployee = 3;
 }
