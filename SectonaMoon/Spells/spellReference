@@ -12,6 +12,4 @@ Id # | spell Name | spell Type # | spell Category # | category , ID , type
 10   | FlameSlash | Single (1)   | Fire (1)         |  1 , 10 , 1 
 11   | FlameBlare | Status (2)   | Fire (1)         |  1 , 11 , 2 
 12   | SummonPhen | AOE (0)      | Fire (1)         |  1 , 12 , 0
-13   | HellFire   | AOE (0)      | Fire (1)         |  1 , 13 , 0 
-
 13   | 
