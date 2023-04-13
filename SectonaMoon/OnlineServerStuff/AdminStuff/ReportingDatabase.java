@@ -6,6 +6,12 @@ public class ReportingDatabase {
     private int statsReportSubNum; 
     private String statsReason; 
 
+    public ReportingDatabase() { 
+        Re.report(); 
+        Re.submitReport("AutoClicker", "one year","Hackikng" );
+
+    }
+
     public ReportingDatabase() {
 }
 }
