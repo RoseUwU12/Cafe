@@ -11,4 +11,7 @@ public class ReportingDatabase {
         Re.submitReport("AutoClicker", "one year","Hackikng" );
 
     }
+
+    public ReportingDatabase() {
+}
 }

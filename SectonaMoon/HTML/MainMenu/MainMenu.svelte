@@ -4,11 +4,19 @@ export let play = false;
 export let settings = false; 
 
     const start = () => { 
+
         play = true; 
     }
 
     const SettingsOpen = () => { 
         settings = true;
+=======
+
+    }
+
+    const SettingsOpen = () => { 
+
+
     }
 
 </script>
@@ -20,13 +28,20 @@ export let settings = false;
     <div class = "left">
 
     </div>
+
+    <button class = "Settings" on:click ={SettingsOpen()}>Settings</button>
+
 </div>
 
 <style lang= "scss"> 
 .MainMenuButtons { 
+
 height: 70 px;
 width: 50 px;
 background-color: palevioletred;
+
+
+
 }
 .startButton { 
 

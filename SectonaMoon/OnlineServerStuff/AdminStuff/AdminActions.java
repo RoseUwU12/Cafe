@@ -2,6 +2,9 @@ package OnlineServerStuff.AdminStuff;
 import OnlineServerStuff.PlayerStuff.Profile;
 public class AdminActions { 
     Profile P = new Profile();
+
+public class AdminActions {
+
     private boolean ban; 
     private boolean mute; 
     private boolean kick; 
